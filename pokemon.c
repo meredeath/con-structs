@@ -11,8 +11,9 @@ struct pokemon generate(int l, char *n){
   return s;
 }
 
-struct pokemon modify(struct pokemon *s, int l, char *n){
-  s->l;
-  s->n;
-  return *s;
+struct pokemon modify(struct pokemon s, int l, char *n){
+  struct pokemon *p = &s;
+  p->level=l;
+  p->name=n;
+  return s;
 }
